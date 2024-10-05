@@ -1,0 +1,271 @@
+*{ 
+   margin: 0;
+   border: 0;
+   box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  
+}
+
+body{
+    background-color: black;
+    height: 100vh;
+}
+
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: cornflowerblue;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+h2.titulo{
+    color: white;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo span{
+    color: steelblue;
+}
+
+button:hover{
+    box-shadow: 0px 0px 8px blue;
+    transform: scale(1.20);
+}
+
+header{ 
+    padding: 40px 4%;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{
+    color: rgb(144, 144, 144);
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+    
+}
+
+header a:hover{
+    color: white;
+    transform: scale(1.20);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+
+
+
+
+.gato{
+    border-radius: 50%;
+}
+
+section.topo{
+    padding: 40px 4%;
+}
+
+section.topo .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo h1{
+    color: white;
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.topo .txt-topo p{
+    color: white;
+    margin: 40px 0;
+
+}
+
+.topo .img-topo img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+section.interface{
+    padding: 40px 4%;
+}
+
+section.work .flex{
+    gap: 60px;
+}
+
+.work .work-box{
+    color: white;
+    padding: 40px;
+    
+    margin-top: 25px;
+    border-radius: 20px;
+    transition: .2s;
+}
+
+.work .work-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px rgb(95, 94, 94);
+}
+
+.work .work-box i{
+    font-size: 70px;
+    color: slateblue;
+
+}
+
+.work .work-box h3{
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+.gato2{
+    border-radius: 25px
+}
+
+section.sobre{
+    padding: 80px 4%;
+}
+
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre{
+    color: white;
+}
+
+.sobre .txt-sobre h2{
+    font-size: 40px;
+    line-height: 40px;
+}
+
+.sobre .txt-sobre h2 span{
+    color: cornflowerblue;
+    display: block;
+    margin-bottom: 30px;
+
+}
+
+.sobre .txt-sobre p{
+    margin: 20px 0;
+    text-align: justify;
+}
+
+ .btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 0;
+    background-color: royalblue;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+
+}
+
+footer{
+    padding: 60px 4%;
+    box-shadow: 0 0 40px 10px rgb(40, 40, 40);
+    
+}
+
+footer .flex{
+    
+    justify-content: space-between;
+    
+}
+
+footer .footer{
+    padding: 20px 0;
+    
+}
+
+.borda{
+    border-top: 2px solid cornflowerblue;
+}
+
+footer .footer p{
+    color: slateblue;
+}
+
+@media screen and (max-width: 1020px){
+
+.flex{
+    flex-direction: column;
+}
+.topo .img-topo img{
+    width: 100%;
+}
+    
+    .topo-comp, .contato {
+        display: none;
+    }
+
+    section.topo .flex{
+        
+        gap: 20px;
+    }
+
+    .sobre .flex{
+        flex-direction: column-reverse;
+    }
+    .sobre .txt-sobre h2{
+        font-size: 40px;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    .btn-social{
+        text-align: center;
+    }
+
+    footer .footer{
+        text-align: center  ;
+        
+    }
+
+    
+}
+
